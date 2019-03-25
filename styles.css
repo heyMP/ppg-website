@@ -1,17 +1,78 @@
 body {
   background: lightblue;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  display: block;
 }
 
 .promo {
   width: 100%;
-  height: 50vh;
-  max-height: 500px;
-  background-size: cover;
+  min-height: 60vh;
   display: flex;
   align-content: center;
   justify-content: center;
-  padding: 1em;
   flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.promo.right {
+  align-items: flex-end;
+}
+.promo.left {
+  align-items: flex-start;
+}
+
+.promo.light {
+  color: black;
+}
+.promo.dark {
+  color: white;
+}
+
+.promo__bg {
+  width: 100%;
+  height: 100%;
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.promo__info {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  flex: 1 1 auto;
+  position: relative;
+}
+
+.promo .promo__info:after {
+  content: '';
+  display: block;
+  top: 0;
+  left: 0;
+  width: 140%;
+  height: 100%;
+  position: absolute;
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 72%, rgba(2,0,36,0) 100%);
+  z-index: -1;
+}
+.promo.light .promo__info:after {
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 72%, rgba(2,0,36,0) 100%);
+}
+.promo.right .promo__info:after {
+  transform: rotate(180deg);
+  right: 0;
+  left: auto;
 }
 
 .promo__title {
@@ -27,16 +88,20 @@ body {
 .promo__footer {
   display: flex;
   justify-content: center;
+  margin: 1em;
 }
 
-.promo.aebi {
+.aebi .promo__bg {
   background-image: url('images/products/slider_aebi_terratrac_agr_1170x405_d[9003].jpg');
   background-position: bottom right;
 }
 
-.promo.ubco {
+.ubco .promo__bg {
   background-image: url('images/products/DSC01161.jpg');
   background-position: center center;
+}
+.promo.ubco .promo__title img {
+  max-width: 2em;
 }
 
 .button {
@@ -45,4 +110,21 @@ body {
   color: white;
   text-decoration: none;
   background: red;
+}
+
+header {
+  padding: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  background: #ba1d1d;
+  color: white;
+  align-items: center;
+}
+
+header .spacer {
+  flex: 1 1 auto;
+}
+
+.site-title {
+  font-size: calc(20px + 1.2vw);
 }
