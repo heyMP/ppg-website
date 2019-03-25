@@ -52,6 +52,10 @@ body {
   flex: 1 1 auto;
   position: relative;
 }
+.promo__info p {
+  max-width: 350px;
+  text-align: center;
+}
 
 .promo .promo__info:after {
   content: '';
@@ -95,13 +99,13 @@ body {
   background-image: url('images/products/slider_aebi_terratrac_agr_1170x405_d[9003].jpg');
   background-position: bottom right;
 }
-
 .ubco .promo__bg {
   background-image: url('images/products/DSC01161.jpg');
   background-position: center center;
 }
-.promo.ubco .promo__title img {
-  max-width: 2em;
+.menzi .promo__bg {
+  background-image: url('images//products/menzi.jpg');
+  background-position: center right;
 }
 
 .button {
@@ -116,15 +120,62 @@ header {
   padding: 1em;
   display: flex;
   flex-wrap: wrap;
-  background: #ba1d1d;
-  color: white;
+  color: black;
+  background: white;
   align-items: center;
+  border-top: .5em solid #ba1d1d;
 }
 
 header .spacer {
   flex: 1 1 auto;
 }
 
+footer {
+  background: white;
+  color: white;
+  border-top: .5em solid #ba1d1d;
+  padding: 1em;
+}
+footer .site-title {
+  font-size: 16px;
+}
+.footer__info {
+  color: black;
+  padding-top: 1em;
+}
+
+.brand-strip {
+  background: white;
+  padding: 1em;
+  border-top: 1em solid #ba1d1d;
+}
+.brand-strip .site-title {
+  font-size: calc(12px + 1.2vw);
+  color: #ba1d1d;
+}
+
 .site-title {
+  font-family: 'Russo One', sans-serif;
   font-size: calc(20px + 1.2vw);
+  color: #ba1d1d;
+}
+
+
+/* Aebi */
+.aebi .promo__title img {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Aebi */
+.ubco .promo__title img {
+  width: 75%;
+  max-width: 200px;
+}
+
+
+/* Menzi */
+.menzi .promo__title img {
+  width: 50%;
+  max-width: 500px;
 }
