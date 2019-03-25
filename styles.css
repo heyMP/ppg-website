@@ -1,3 +1,48 @@
 body {
   background: lightblue;
 }
+
+.promo {
+  width: 100%;
+  height: 50vh;
+  max-height: 500px;
+  background-size: cover;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 1em;
+  flex-direction: column;
+}
+
+.promo__title {
+  color: white;
+  font-size: calc(20 * .3vw);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+}
+
+.promo__footer {
+  display: flex;
+  justify-content: center;
+}
+
+.promo.aebi {
+  background-image: url('images/products/slider_aebi_terratrac_agr_1170x405_d[9003].jpg');
+  background-position: bottom right;
+}
+
+.promo.ubco {
+  background-image: url('images/products/DSC01161.jpg');
+  background-position: center center;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  background: red;
+}
