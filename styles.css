@@ -1,5 +1,5 @@
 body {
-  background: lightblue;
+  background: black;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -32,7 +32,7 @@ body {
 }
 
 .promo__bg {
-  width: 100%;
+  width: 80%;
   height: 100%;
   background-position: center right;
   background-repeat: no-repeat;
@@ -40,6 +40,15 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.promo.left .promo__bg {
+  left: inherit;
+  right: 0;
+}
+
+.promo.flip-bg .promo__bg {
+  transform: scaleX(-1)
 }
 
 .promo__info {
@@ -51,6 +60,8 @@ body {
   z-index: 10;
   flex: 1 1 auto;
   position: relative;
+  font-size: 1.1em;
+  padding: 1em;
 }
 .promo__info p {
   max-width: 350px;
@@ -84,6 +95,7 @@ body {
   font-size: calc(20 * .3vw);
   display: flex;
   align-content: center;
+  align-items: center;
   justify-content: center;
   line-height: 1;
   margin: 0;
@@ -97,15 +109,15 @@ body {
 
 .aebi .promo__bg {
   background-image: url('images/products/slider_aebi_terratrac_agr_1170x405_d[9003].jpg');
-  background-position: bottom right;
+  background-position: 80% 80%;
 }
 .ubco .promo__bg {
   background-image: url('images/products/DSC01161.jpg');
-  background-position: center center;
+  background-position: 60% 50%;
 }
 .menzi .promo__bg {
   background-image: url('images//products/menzi.jpg');
-  background-position: center right;
+  background-position: 50% 50%;
 }
 
 .button {
