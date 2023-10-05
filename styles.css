@@ -192,8 +192,14 @@ footer .site-title {
   max-width: 500px;
 }
 
-/* Menzi */
+/* Goweil */
 .goweil .promo__title img {
+  width: 50%;
+  max-width: 500px;
+}
+
+/* Awassos */
+.awassos .promo__title img {
   width: 50%;
   max-width: 500px;
 }
