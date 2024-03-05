@@ -120,6 +120,11 @@ body {
   background-position: 50% 50%;
 }
 
+.pronovost .promo__bg {
+  background-image: url('images//products/Photos\ gammes\ ProGrII.jpeg');
+background-position: 80% 50%;
+}
+
 .button {
   display: inline-block;
   padding: 10px;
