@@ -107,6 +107,45 @@ body {
   margin: 1em;
 }
 
+.squarebarrel .promo__bg {
+  background-image: url('images/products/squarebarrelnobackground-removebg-preview.png');
+  background-position: 60% 50%;
+}
+
+.pronovost .promo__bg {
+  background-image: url('images/products/Photos\ gammes\ ProGrII.jpeg');
+  background-position: 10% 50%;
+}
+
+.locknlube .promo__bg {
+  background-image: url('images/products/IMG_7398.jpg');
+  background-position: 20% 70%;
+}
+
+.fyrebx .promo__bg {
+  background-image: url('images/products/Fyrebx_Red_on+a+CAT_T3+hero_med.png');
+  background-position: 20% 95%;
+}
+
+.awassos .promo__bg {
+  background-image: url('images/products/awassos_machine.jpg');
+  background-position: 20% 70%;
+}
+
+.goweil .promo__bg {
+  background-image: url('images/products/Goweilbucket.jpeg');
+  background-position: 60% 62%;
+}
+
+.amsoil .promo__bg {
+  background-image: url('images/products/amsoil.jpeg');
+  background-position: 60% 62%;
+}
+
+.giant .promo__bg {
+  background-image: url('images/products/G2200_1-1280x848.jpg');
+  background-position: 60% 62%;
+}
 .aebi .promo__bg {
   background-image: url('images/products/slider_aebi_terratrac_agr_1170x405_d[9003].jpg');
   background-position: 80% 80%;
@@ -120,10 +159,6 @@ body {
   background-position: 50% 50%;
 }
 
-.pronovost .promo__bg {
-  background-image: url('images//products/Photos\ gammes\ ProGrII.jpeg');
-background-position: 80% 50%;
-}
 
 .button {
   display: inline-block;
@@ -208,3 +243,4 @@ footer .site-title {
   width: 50%;
   max-width: 500px;
 }
+
