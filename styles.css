@@ -107,13 +107,23 @@ body {
   margin: 1em;
 }
 
+.tajfunusa .promo__bg {
+  background-image: url('images/products/tajfunusademocrop.png');
+  background-position: 80% 20%;
+}
+
 .squarebarrel .promo__bg {
   background-image: url('images/products/squarebarreldumping.jpg');
   background-position: 60% 50%;
 }
 
 .pronovost .promo__bg {
-  background-image: url('images/products/Photos\ gammes\ ProGrII.jpeg');
+  background-image: url('images/products/Gamme_Groupe1.jpeg');
+  background-position: 60% 50%;
+}
+
+.seppi .promo__bg {
+  background-image: url('images/products/seppi1.png');
   background-position: 10% 50%;
 }
 
@@ -123,13 +133,13 @@ body {
 }
 
 .fyrebx .promo__bg {
-  background-image: url('images/products/Fyrebx_Red_on+a+CAT_T3+hero_med.png');
-  background-position: 20% 95%;
+  background-image: url('images/products/LANDBX_Triple+play+03-2024+med_t.jpg');
+  background-position: 60% 50%;
 }
 
 .awassos .promo__bg {
   background-image: url('images/products/awassos_machine.jpg');
-  background-position: 20% 70%;
+  background-position: 20% 85%;
 }
 
 .goweil .promo__bg {
