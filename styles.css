@@ -255,8 +255,8 @@ footer .site-title {
 }
 
 
-@media (max-width: 600px) {
+@media (min-width: 600px) {
   .promo {
-    min-height: none;
+    min-height: 0;
   }
 }
