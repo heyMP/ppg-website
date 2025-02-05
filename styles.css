@@ -8,6 +8,7 @@ body {
 
 .promo {
   width: 100%;
+  min-height: 60vh;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -254,3 +255,8 @@ footer .site-title {
 }
 
 
+@media (max-width: 600px) {
+  .promo {
+    min-height: none;
+  }
+}
